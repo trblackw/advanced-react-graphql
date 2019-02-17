@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SickButton = styled.button`
+const SickButton = styled('button')`
   background: red;
   color: white;
   font-weight: 500;

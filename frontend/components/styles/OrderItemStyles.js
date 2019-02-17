@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-const OrderItemStyles = styled.li`
-  box-shadow: ${props => props.theme.bs};
+const OrderItemStyles = styled('li')`
+  box-shadow: ${({ theme }) => theme.bs};
   list-style: none;
   padding: 2rem;
-  border: 1px solid ${props => props.theme.offWhite};
+  border: 1px solid ${({ theme }) => theme.offWhite};
   h2 {
     border-bottom: 2px solid red;
     margin-top: 0;

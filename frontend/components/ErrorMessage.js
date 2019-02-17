@@ -3,7 +3,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-const ErrorStyles = styled.div`
+const ErrorStyles = styled('div')`
   padding: 2rem;
   background: white;
   margin: 2rem 0;

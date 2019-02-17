@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const CartStyles = styled.div`
+const CartStyles = styled('div')`
   padding: 20px;
   position: relative;
   background: white;
@@ -17,14 +17,14 @@ const CartStyles = styled.div`
   z-index: 5;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  ${props => props.open && `transform: translateX(0);`};
+  ${({ open }) => open && `transform: translateX(0);`};
   header {
-    border-bottom: 5px solid ${props => props.theme.black};
+    border-bottom: 5px solid ${({ theme }) => theme.black};
     margin-bottom: 2rem;
     padding-bottom: 2rem;
   }
   footer {
-    border-top: 10px double ${props => props.theme.black};
+    border-top: 10px double ${({ theme }) => theme.black};
     margin-top: 2rem;
     padding-top: 2rem;
     display: grid;
